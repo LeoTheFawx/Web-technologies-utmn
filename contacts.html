@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контактная Страница</title>
-
+    <link rel="stylesheet" href="src/assets/styles/style.css">
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="Logo.png" alt="Логотип компании">
+                <img src="src/assets/img/Logo.png" alt="Логотип компании">
             </a>
         </div>
-        <nav>
+        <nav class="breadcrumb-menu"">
             <ul>
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
@@ -22,62 +22,63 @@
     </header>
 
     <main>
-        <h2>Contact Us</h2>
-        <p>Информация</p>
+        <h2 class="title-secondary">Contact Us</h2>
+        <p class="text-primary">Информация</p>
         <div class="logo2">
             <a href="index.html">
-                <img src="Logo2.png" alt="Логотип компании" style="max-width: 350px; width: 100%; height: auto;">
+                <img src="src/assets/img/Logo2.png" alt="Логотип компании" style="max-width: 350px; width: 100%; height: auto;">
             </a>
         </div>
-        <h4>Address</h4>
-        <p>Тюмень</p>
-        <h4>Phone</h4>
+        <h4 class="title-quaternary">Address</h4>
+        <p class="text-primary">Тюмень</p>
+        <h4 class="title-quaternary">Phone</h4>
         <ul>
-            <li>+7 (919) 999-99-99</li>
-            <li>+7 (919) 919-91-99</li>
+            <li class="text-primary">+7 (919) 999-99-99</li>
+            <li class="text-primary">+7 (919) 919-91-99</li>
         </ul>
-        <h4>Online service</h4>
+        <h4 class="title-quaternary">Online service</h4>
         <ul>
-            <li><a href="Index.html">Наш Сайт</a></li>
-            <li><a href="mailto:info@example.ru">info@example.ru</a></li>
+            <li class="text-primary"><a href="Index.html">Наш Сайт</a></li>
+            <li class="text-primary"><a href="mailto:info@example.ru">info@example.ru</a></li>
         </ul>
-        <p>Ул.Цветочная; +7 (919) 999-99-99</p>
-        <h4>Send us message</h4>
-        <form action="#" method="POST" style="max-width: 350px; display: flex; flex-direction: column; gap: 15px;">
+        <p class="text-primary">Ул.Цветочная; +7 (919) 999-99-99</p>
+
+        <h4 class="title-quaternary">Send us message</h4>
+        <form class="contact-form" action="#" method="POST" style="max-width: 350px; display: flex; flex-direction: column; gap: 15px;">
     
-            <label>
+            <label class="text-primary">
                 Full Name
-                <input type="text" name="fullname" placeholder="Введите ваше имя">
+                <input class="form-field" type="text" name="fullname" placeholder="Введите ваше имя">
             </label>
         
-            <label>
+            <label class="text-primary">
                 Email
-                <input type="email" name="email" placeholder="example@mail.com">
+                <input class="form-field" type="email" name="email" placeholder="example@mail.com">
             </label>
         
-            <label>
+            <label class="text-primary">
                 Message
-                <textarea name="message" rows="4" placeholder="Ваше сообщение...">
+                <textarea class="form-field" name="message" rows="4" placeholder="Ваше сообщение...">
 
                 </textarea>
             </label>
         
-            <button type="submit">submit</button>
+            <button type="submit" class="button-submit">submit</button>
 
         </form>
         <hr>
     </main>
 </body>
 <footer>
-        <h3>Оставайтесь на связи!</h3>
-        <p>Мы всегда рады ответить на вопросы.</p>
+        <h3 class="title-tertiary">Оставайтесь на связи!</h3>
+        <p class="text-primary">Мы всегда рады ответить на вопросы.</p>
         <hr>
 
         <ul>
-            <li>Список контактов:</li>
-            <li>+7 (919) 999-99-99</li>
-            <li>info@example.ru</li>
+            <li class="text-primary">Список контактов:</li>
+            <li class="text-primary">+7 (919) 999-99-99</li>
+            <li class="text-primary">info@example.ru</li>
         </ul>
-        <p>&copy; 2026 Все права защищены.</p>
-    </footer>
+        <p class="text-primary">&copy; 2026 Все права защищены.</p>
+</footer>
 </html>

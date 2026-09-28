@@ -2,10 +2,103 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
+.text-primary{ /*Параграфы*/
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
 }
 
-.test {
-    color: red !important;
+.title-main{ /*h1*/
+    font-size: 64px;
+    color: #1F3F68;
 }
+
+.title-secondary { /*h2*/
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.title-tertiary  { /*h3*/
+    font-size: 36px;
+    text-align: center;
+}
+
+.title-quaternary { /*h4*/
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.form-field {  /*Поля ввода*/
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.button-submit { /*Отправка формы*/
+    background: linear-gradient(90deg, #4d6cb3 0%, #457dff 50%, #5f00f8 100%);
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-radius: 16px;
+    padding: 14px 32px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.contact-form { /*Вид формы*/
+    
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.breadcrumb-menu{ /*Хлебные крошки*/
+    background: linear-gradient(to bottom, #ffffff 0%, #82a8a8 20%, #0aa5ff 100%);
+     padding: 10px;
+}
+
+.breadcrumb-menu ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #335c5c;
+  overflow: hidden;
+}
+
+.breadcrumb-menu li {
+  margin-right: -25px; 
+  position: relative;
+}
+
+.breadcrumb-menu li a, 
+.breadcrumb-menu li.active {
+  display: block;
+  padding: 12px 45px 12px 30px;
+  color: #000;
+  font-size: 16px;
+  background: linear-gradient(to bottom, #ffffff 0%, #82a8a8 20%, #0aa5ff 100%);
+  border-radius: 0 30px 30px 0;
+  border: 1px solid #335c5c;
+} 
+
+.breadcrumbs li.active {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+/*Настройка z-index*/
+.breadcrumb-menu li:nth-child(1) { z-index: 4; }
+.breadcrumb-menu li:nth-child(2) { z-index: 3; }
+.breadcrumb-menu li:nth-child(3) { z-index: 2; }
+.breadcrumb-menu li:nth-child(4) { z-index: 1; }
+
