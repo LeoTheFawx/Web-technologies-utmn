@@ -7,88 +7,172 @@
     <link rel="stylesheet" href="src/assets/styles/style.css">
 </head>
 <body>
-    <header class = "main-header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="src/assets/img/Logo.png" alt="Логотип компании">
-            </a>
-        </div>
-        <nav class="breadcrumb-menu">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <div class="header-wrapper">
+        <header class="pc-header">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="src/assets/img/Logo.png">
+                </a>
+            </div>
+
+            <nav class="header-nav">
+                <a href="#" class="header-nav-link">Services</a>
+                <a href="#" class="header-nav-link">Media</a>
+                <a href="#" class="header-nav-link">Cases</a>
+                <a href="#" class="header-nav-link">FAQ</a>
+                <a href="#" class="header-nav-link">Contacts</a>
+            </nav>
+
+            <div class="header-contacts">
+                <div class="header-phones">
+                    <img src="src/assets/img/phone.png" alt="" class="header-icon">
+                    <a href="tel:+77072548147" class="header-phone-link">+7 (919) 999 999</a>
+                    <a href="tel:+77783959026" class="header-phone-link">+7 (919) 999 999</a>
+                    <img src="src/assets/img/mail.png" alt="" class="header-icon">
+                    <a class="header-email-link">Leo@mail.com</a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="mobile-header-wrapper">
+        <header class="mobile-header">
+            <div class="mobile-burger">
+                <a href="index.html">
+                    <img src="src/assets/img/menu.png">
+                </a>
+            </div>
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="src/assets/img/Logo.png">
+                </a>
+            </div>
+            <div class="header-contacts">
+                <img src="src/assets/img/mail.png" alt="" class="header-icon">
+                <a class="header-email-link">Leo@mail.com</a>
+            </div>
+        </header>
+    </div>
 
     <main>
-        <div class = "advert-section">
-
-            <div class = "advert-section-title">
-                <h2 class="title-secondary">Компания Leo - Ведущий поставщик IT продуктов.</h2>
-            </div>
-
-            <div class="advert-body">
-
-                <div class = "advert-section-text">
-                    <h2 class="title-secondary">Быстрое обслуживание и долговременное сотрудничество.</h2>
-                    <p class="text-primary">Компания Leo будет рада сотрудничеству с новыми компаниями в сфере IT и готова рассмотреть множество предложентий.</p>
-                    
-                    <a href="contacts.html">
-                        <button class="button-submit">Свяжитесь с нами!</button>
-                    </a>
-                    
+        <div class="hero-block">
+            <div class="hero-left">
+                <div class="hero-description">
+                    <h1>
+                        Development of <span> mobile applications </span> and <span> web services </span>
+                        of any complexity
+                    </h1>
+                    <p>
+                        We create mobile applications for iOS, Android that transfer
+                        your business to mobile applications of your customers' devices
+                    </p>
                 </div>
+                <div class="mobile-hero-image">
+                    <img src="src/assets/img/Group 1.png">
+                </div>
+                <div class="hero-content">
+                    <form class="hero-form" action="#" method="post"> 
+                        <h2> Leave your contacts and we will call you back within 30 minutes </h2> 
 
-                <div class = "advert-section-img">
-                    <img src="src/assets/img/advert.png" alt="Задник">
+                        <div class="form-field"> 
+                            <label for="hero-phone">Phone number</label> 
+                            <input id="hero-phone" type="tel" name="phone" placeholder="+7 (702) 517-11-98" required> 
+                        </div> 
+                    
+                        <div class="form-field"> 
+                            <label for="hero-name">Full name</label> 
+                            <input id="hero-name" type="text" name="name" placeholder="Агадиль" required> 
+                        </div> 
+                    
+                        <button type="submit"> Get consultation </button> 
+                    </form>
                 </div>
             </div>
+            <div class="hero-image">
+                <img src="src/assets/img/Group 1.png">
+            </div>
         </div>
-        <hr>
 
-        <div class = "welcome-section">
-            <div class = "welcome-message">
-                <h1 class="title-main">Добро пожаловать!</h1>
-                <p class="text-primary">Компания Leo</p>
+        <div class="dev-cycle-block">
+            <div class="dev-cycle-info">
+                <h1>
+                    Full development cycle
+                </h1>
+                <p>
+                    We use proven technologies
+                </p>
+                <div class="dev-cycle-listing">
+                    <h3>
+                        Web
+                    </h3>
+                    <p>
+                        PHP <span>/</span> Javascript <span>/</span> Node.JS <span>/</span> Web Socket <span>/</span> Socket.io <span>/</span> Vue.js
+                        <span>/</span> <br> Nuxt <span>/</span> MySQL <span>/</span> Laravel <span>/</span> GO lang <span>/</span> django <span>/</span> Python
+                    </p>
+                </div>
+                <div class="dev-cycle-listing">
+                    <h3>
+                        Mobile
+                    </h3>
+                    <p>
+                        Swift <span>/</span>  Kotlin <span>/</span>  Alamofire <span>/</span>  Firebase <span>/</span>  CoreData <span>/</span>  Room <span>/</span>  Realm 
+                        <span>/</span> <br>Coroutine <span>/</span> RxJava <span>/</span> RxSwift <span>/</span> Unit Test <span>/</span> Navigation
+                    </p>
+                </div>
             </div>
-            
-            <div class = "welcome-description">
-                <p class="text-primary">Ведущая компания в деле производства различных товаров общего пользования.</p>
-                <p class="text-primary">Лидер производства по всему миру.</p>
+            <div class="dev-cycle-tabs">
+                <a href="#">
+                    iOS development <img src="src/assets/img/arrow.png">
+                </a>
+                <a href="#">
+                    Android development <img src="src/assets/img/arrow.png">
+                </a>
+                <a href="#">
+                    Web development <img src="src/assets/img/arrow.png">
+                </a>
+                <a href="#">
+                    UI/UX design <img src="src/assets/img/arrow.png">
+                </a>
+                <a href="#">
+                    Testing <img src="src/assets/img/arrow.png">
+                </a>
+                <a href="#">
+                    Launch <img src="src/assets/img/arrow.png">
+                </a>
+                <a href="#">
+                    IT consulting <img src="src/assets/img/arrow.png">
+                </a>
             </div>
         </div>
-        <hr>
-        
-        <div class = "main-section">
-            <div class = "info-title">
-                <h3 class="title-tertiary">Полезная информация:</h3>
-                <h4 class="title-quaternary">Ответим на ваши вопросы. Рассмотрим ваши предложения.</h4>
-            </div>
-            
-            <div class = "info-block">
-                <h4 class="title-quaternary">Почему стоит выбрать данную компанию?</h4>
-                <p class="text-primary">Наше предприятие предлагает качественные услуги по низким ценам.</p>
-            </div>
-            
-            <div class = "info-block">
-                <h3 class="title-tertiary">Отправьте свою заявку!</h3>
-                <p class="text-primary">Рассмотрение заявок происходит в течении 3-10 рабочих дней.</p>
-            </div>
-            
-        </div>
-        <hr>
     </main>
     <footer class = "main-footer">
-        <h3 class="title-tertiary">Оставайтесь на связи!</h3>
-        <p class="text-primary">Мы всегда рады ответить на вопросы.</p>
-        <hr>
-        <p class="text-primary">Список контактов:</p>
-        <ul class = "footer-info-blocks">
-            <li class="text-primary">+7 (919) 999-99-99</li>
-            <li class="text-primary">info@example.ru</li>
-        </ul>
-        <p class="text-primary">&copy; 2026 Все права защищены.</p>
+        <h2>IT WEBSITE</h2>
+        <div class="footer-info-blocks">
+            <div>
+                <p><img src="src/assets/img/phone1.png"> Contact nums</p>
+                <a href="#" class="footer-item-link">+7 (919) 999 999</a>
+            </div>
+
+            <div>
+                <p><img src="src/assets/img/mail1.png"> Post</p>
+                <a href="#" class="footer-item-link">Leo@mail.com</a>
+            </div>
+
+            <div>
+                <p><img src="src/assets/img/address.png" > Adress</p>
+                <span class="footer-item-link">City city, steet st. 90</span>
+            </div>
+
+            <div>
+                <p><img src="src/assets/img/document.png"> Leave a request</p>
+                <a href="#" class="footer-item-link">Leave a request</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <img src="src/assets/img/map.png" >
+            <span>We work throughout world</span>
+        </div>
     </footer>
 </body>
 
