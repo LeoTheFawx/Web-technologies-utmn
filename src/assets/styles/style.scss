@@ -243,9 +243,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 500px;
-    height: 600px;
+    width: 700px;
+    height: 750px;
     position: relative;
     object-fit: cover; 
 
@@ -308,7 +307,7 @@ body {
     background-color: $color-bg-white;
     align-items: center;
     justify-content: center;
-    gap:500px;
+    gap:300px;
 }
 
 .dev-cycle-info{
@@ -320,6 +319,7 @@ body {
 .dev-cycle-listing{
     display: flex;
     flex-direction: column;
+    width: 60%;
 
     p span {
         color: $color-primary;
